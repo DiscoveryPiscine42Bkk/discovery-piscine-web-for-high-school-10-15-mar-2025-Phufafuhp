@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation bar -->
+    <nav class="py-3 items-center fixed w-full p-6 top-0 z-100">
+        <div class="absolute right-5 space-y-2">
+            <!-- Would be real damn NICE if I could find a way to add text without breaking the damn thing.-->
+            <!-- ASK IF THESE ICONS ARE ALLOWED-->
+            <a href="#about-me"
+                class="group block p-3 bg-gray-800 rounded-full text-white transition duration-400 ease-in-out hover:bg-blue-700">
+                <i class="fa-regular fa-circle-user"></i>
+                <p class="hidden group-hover:inline">&nbspAbout me</p>
+            </a>
+
+            <a href="#certificates"
+                class="group block p-3 bg-gray-800 rounded-full text-white transition duration-400 ease-in-out hover:bg-blue-700">
+                <i class="fa-regular fa-circle-user"></i>
+                <p class="hidden group-hover:inline">&nbspCertificates</p>
+            </a>
+
+            <a href="#contact"
+                class="group block p-3 bg-gray-800 rounded-full text-white transition duration-400 ease-in-out hover:bg-blue-700">
+                <i class="fa-regular fa-circle-user"></i>
+                <p class="hidden group-hover:inline">&nbspContact</p>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <!-- Consider changing up the fonts if possible-->
+    <div class="bg-gray-900">
+        <section class="bg-black p-5">
+            <img src="https://media2.giphy.com/media/oOBTO2UcSoaBJewZT0/200w.gif?cid=6c09b952x3qqfc9yrodlbimmufip9mxzsb3v9islhcrgti7o&ep=v1_gifs_search&rid=200w.gif&ct=g"
+                alt="Critical Failure!" class="m-auto w-3/10 justify-center">
+        </section>
+
+        <div class="bg-gray-800 w-full h-2dvh p-4 block">
+            <p class="font-sans text-6xl font-bold text-white text-center text-wrap">PORTFOLIO</p>
+        </div>
+
+        <!--ABOUT ME-->
+        <section id="about-me" class="min-h-max m-20 items-center">
+                <h1 class="text-5xl font-semibold text-white">ABOUT ME</h1>
+                <div class="m-3 flex justify-between">
+                    <img src="https://media.discordapp.net/attachments/1348299592877477889/1349655692239441960/1740153024103.jpg?ex=67d3e450&is=67d292d0&hm=bd54be3171893392eaafa3494ff31e7435e98eeb796b1060fd22a941e87bc184&=&format=webp&width=1440&height=1440" alt="Me in front of the Brandenburg Gate" class="w-1/2 h-auto m-20 rounded-md outline-6 outline-blue-900 outline-offset-4 transition duration-200 ease-in-out hover:scale-120">
+                    <div class="block w-1/2 m-20 text-2xl text-white">
+                        <p class="indent-5">HI HI IH HELLO HI HI!!!! blach blah blah blah blah</p><br>
+                        <ul>
+                            <li>Age:</li>
+                            <li>Age:</li>
+                            <li>Age:</li>
+                            <li>Age:</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+        <!--CERTIFICATES-->
+        <section id="certificates" class="h-screen bg-gray-300 text-center flex items-center justify-center">
+            <h2 class="text-3xl font-semibold">CERTIFICATES</h2>
+        </section>
+
+        <!--CONTACT-->
+        <section id="contact" class="h-screen bg-gray-600 text-center flex items-center justify-center">
+            <h2 class="text-3xl font-semibold">CONTACT.</h2>
+        </section>
+    </div>
+
+</body>
+
+</html>

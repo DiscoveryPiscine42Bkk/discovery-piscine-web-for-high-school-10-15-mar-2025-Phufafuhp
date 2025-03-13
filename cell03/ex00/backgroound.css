@@ -1,0 +1,6 @@
+button {
+    border: 3px black;
+    color: gray;
+    padding:15px 30px;
+    cursor: pointer;
+}
