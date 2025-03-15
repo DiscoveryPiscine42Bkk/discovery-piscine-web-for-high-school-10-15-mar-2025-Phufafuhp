@@ -11,14 +11,56 @@
             border-radius: 100%;
             background-color: red;
         }
+
+        p {
+            color: black;
+            height: 10vh;
+        }
+
+        body{
+            background-color: yellow;
+        }
     </style>
 </head>
 
 <body>
-    <div class="balloon" onclick="enlarge()"></div>
-    <script>
-        let enlargedSize
+    <div class="balloon" id="balloon" onclick="enlarge(); changeColor1()"></div>
+    <p id="test"></p>
+    <p>Literally fucking anything.</p>
 
+    <script>
+        let color = document.body.style.backgroundColor;
+document.getElementById("demo").innerHTML = color;
+
+        function getBiggerSize(){
+            let size = document.getElementById("balloon").clientHeight +10;
+            return size + "px";
+        }
+
+        function enlarge(){
+            document.getElementById("balloon").style.width = getBiggerSize();
+            document.getElementById("balloon").style.height = getBiggerSize();
+        }
+
+        const balloon = document.getElementById("balloon");
+
+// Define an array of colors
+const colors = ["red", "green", "blue"];
+
+// Initialize a variable to track the current color index
+let colorIndex = 0;
+
+// Add a click event listener to the element
+balloon.addEventListener("click", function() {
+// Change the background color to the next color in the array
+balloon.style.backgroundColor = colors[colorIndex];
+
+// Update the colorIndex to the next color (cycle through the array)
+colorIndex = (colorIndex + 1) % colors.length;
+});
+
+        
+        
     </script>
 </body>
 </html>

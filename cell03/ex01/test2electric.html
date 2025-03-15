@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Background Color</title>
+</head>
+<body>
+
+<div id="myElement" style="background-color: blue; padding: 20px;">
+    This is a sample element.
+</div>
+
+<p id="output">The background color is: </p>
+
+<div id="newElement">Another div</div>
+
+<script>
+    // Get the element
+    const element = document.getElementById("myElement");
+
+    // Get the background color using getComputedStyle
+    const bgColor = window.getComputedStyle(element).backgroundColor;
+
+    // Display the background color as text
+    document.getElementById("output").innerText = "The background color is: " + bgColor;
+
+    document.getElementById("newElement").style.backgroundColor = bgColor
+</script>
+
+</body>
+</html>
