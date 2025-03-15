@@ -15,21 +15,46 @@ body {
 
 table {
     width: 50vh;
-    height: 50vh;
+    min-height: 50vh;
     padding: 0px;
     background-color: white;
     box-shadow: 1px 1px 20px gray;
 }
 
-.card td {
-    color:black;
-}
-
 .card .img {
     width: 100%;
+    height: 40vh;
     margin: 0px;
     background-image: url('https://raw.githubusercontent.com/DiscoveryPiscine42Bkk/discovery-piscine-web-for-high-school-10-15-mar-2025-Phufafuhp/refs/heads/main/rush/assets/1740153024103.webp');
     background-position: center;
     background-size: cover;
+}
 
+.card h2 {
+    font-size: 2rem;
+}
+
+.icons {
+    display: flex;
+    height: 10vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons img{
+    height: 3vh;
+    margin: 0.5rem;
+}
+
+.contact {
+    background: darkblue;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    text-align: center;
+}
+
+.contact:active {
+    background-color: black;
 }
